@@ -32,15 +32,30 @@
 <label for="namn">namn </label>
 <input type="text" id="namn" name="namn">
 
-<label for="E-post">E-post</label>
+<label for="e-post">E-post</label>
 <input type="email" id="epost" name="epost">
 
 <label for="ämne">ämne</label>
 <select id="ämne" name="ämne">
     <option value="jobb">jobb</option>
-    <option value="smarbete">samarbete</option>
+    <option value="samarbete">samarbete</option>
 <option value="övrigt">övrigt</option>
+
+
 </select>
+
+<fieldset>
+<legend>Typ av förfrågan</legend>
+
+<input type="radio" id="privat" name="typ" value="privat">
+<label for="privat">Privat</label>
+
+<input type="radio" id="foretag" name="typ" value="foretag">
+<label for="foretag">Företag</label>
+
+</fieldset>
+
+
 
 <label for="meddelande">meddelande</label>
 <textarea id="meddelande" name="meddelande"></textarea>
