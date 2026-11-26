@@ -28,15 +28,17 @@
             Alexjakobsson00@hotmail.com
         </a>
     </p>
-<form action="tack.php" method="post">
-<label for="namn">namn </label>
-<input type="text" id="namn" name="namn">
+<form class="contact-form" action="tack.php" method="post">
 
-<label for="epost">E-post</label>
-<input type="email" id="epost" name="epost">
 
-<label for="ämne">ämne</label>
-<select id="ämne" name="ämne">
+<label class="contact-form__label" for="namn">namn</label>
+<input class="contact-form__input" type="text" id="namn" name="namn">
+
+<label class="contact-form__label" for="epost">E-post</label>
+<input class="contact-form__input" type="email" id="epost" name="epost">
+
+<label class="contact-form__label" for="ämne">Ämne</label>
+<select class="contact-form__select" id="ämne" name="ämne">
     <option value="jobb">jobb</option>
     <option value="samarbete">samarbete</option>
 <option value="övrigt">övrigt</option>
@@ -44,34 +46,34 @@
 
 </select>
 
-<fieldset>
-<legend>Typ av förfrågan</legend>
+<fieldset class="contact-form__group">
+<legend class="contact-form__legend">Typ av förfrågan</legend>
 
-<input type="radio" id="privat" name="typ" value="privat">
-<label for="privat">Privat</label>
+<input class="contact-form__radio" type="radio" id="privat" name="typ" value="privat">
+<label class="contact-form__label" for="privat">Privat</label>
 
-<input type="radio" id="foretag" name="typ" value="foretag">
-<label for="foretag">Företag</label>
+<input class="contact-form__radio" type="radio" id="foretag" name="typ" value="foretag">
+<label class="contact-form__label" for="foretag">Företag</label>
 
 </fieldset>
 
 
 
-<label for="meddelande">meddelande</label>
-<textarea id="meddelande" name="meddelande"></textarea>
+<label class="contact-form__label" for="meddelande">Meddelande</label>
+<textarea class="contact-form__message" id="meddelande" name="meddelande"></textarea>
 
 
 
 <!-- JS: visa status när formuläret skickas -->
 
-<button type="submit"
+<button class="contact-form__button" type="submit"
 data-js-action="send-message"
 data-name="contact-form">
 
 skicka
 </button>
 
-<p data-js-target="message-result" aria-live="polite"></p>
+<p class="contact-form__result" data-js-target="message-result" aria-live="polite"></p>
 
 </form>
 
