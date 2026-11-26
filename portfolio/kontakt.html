@@ -32,7 +32,7 @@
 <label for="namn">namn </label>
 <input type="text" id="namn" name="namn">
 
-<label for="e-post">E-post</label>
+<label for="epost">E-post</label>
 <input type="email" id="epost" name="epost">
 
 <label for="ämne">ämne</label>
@@ -60,7 +60,18 @@
 <label for="meddelande">meddelande</label>
 <textarea id="meddelande" name="meddelande"></textarea>
 
-<button type="submit">skicka</button>
+
+
+<!-- JS: visa status när formuläret skickas -->
+
+<button type="submit"
+data-js-action="send-message"
+data-name="contact-form">
+
+skicka
+</button>
+
+<p data-js-target="message-result" aria-live="polite"></p>
 
 </form>
 
