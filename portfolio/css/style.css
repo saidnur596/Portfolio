@@ -1,11 +1,9 @@
-.site-header {}
-.main-nav {}
-.main-nav__link {}
-.main-nav__link--active {}
+.site-header {} 
+.site-nav {} 
+.site-nav__link {}
 
-.intro {}
-.intro__title {}
-.intro__text {}
+.home-page__title {}
+.home-page__text {}
 
 .site-footer {}
 .site-footer__text {}
