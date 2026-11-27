@@ -23,3 +23,8 @@
 .education-section__title  {}
 .education-section__list  {}
 .education-section__item  {}
+
+.about-page__image {
+    max-width: 100%;
+    height: auto;
+}
