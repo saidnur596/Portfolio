@@ -1,6 +1,6 @@
 .site-header {} 
-.site-nav {} 
-.site-nav__link {}
+.site-nav .site-nav { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.site-nav__link {display: inline-flex; align-items: center; min-height: 48px; padding: 0 0.5rem;}
 
 .home-page__title {}
 .home-page__text {}
